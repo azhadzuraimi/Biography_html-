@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+<div class="login-box">
+  <h1>Login</h1>
+
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <form name="login">
+    <input name="id" type="text" placeholder="Username" >
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input name="pass" type="password" placeholder="Password" id="myPsw" >
+  </div>
+
+  <input type="button" class="btn" value="Sign in" onclick="pasuser(this.form)">
+
+</div>
+
+<script>
+function pasuser(form) {
+if (form.id.value=="azhad") {
+if (form.pass.value=="pass") {
+location="biography.html"
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+}
+}
+</script>
+  </body>
+</html>
